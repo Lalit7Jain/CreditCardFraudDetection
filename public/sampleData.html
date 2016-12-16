@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="productCustomizer">
+<head>
+    <title> Data Science </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.0/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.0/angular-route.js"></script>
+
+</head>
+<body ng-controller="sampleDataController" style="padding: 20px;">
+
+<br/><br/>
+<script src="app.js"></script>
+<script src="config.js"></script>
+<div class="container">
+<div class="row">
+<div class="col-lg-7">
+<div class="panel panel-default">
+<div class="panel-heading"><a href="" ng-click="toggleCustom()">Open</a></div>
+<div class="panel-body" ng-hide="custom">
+    <form class="form-horizontal" style="padding-top: 5px;">
+	    <div class="form-group">
+            <label for="Time" class="col-sm-4 control-label">Time </label>
+            <div class="col-sm-8">
+                <input class="form-control" id="Time" type="number" ng-model="Time" >
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="V1" class="col-sm-4 control-label">V1 </label>
+            <div class="col-sm-8">
+                <input class="form-control" id="V1" type="number" ng-model="V1"  >
+            </div>
+        </div>
+		        <div class="form-group">
+            <label for="V2" class="col-sm-4 control-label">V2 </label>
+            <div class="col-sm-8">
+                <input class="form-control" id="V2" type="number" ng-model="V2">
+            </div>
+        </div>
+		        <div class="form-group">
+            <label for="V3" class="col-sm-4 control-label">V3 </label>
+            <div class="col-sm-8">
+                <input class="form-control" id="V3" type="number" ng-model="V3" >
+            </div>
+        </div>
+		        <div class="form-group">
+            <label for="V4" class="col-sm-4 control-label">V4 </label>
+            <div class="col-sm-8">
+                <input class="form-control" id="V4" type="number" ng-model="V4" >
+            </div>
+        </div>
+		        <div class="form-group">
+            <label for="V5" class="col-sm-4 control-label">V5</label>
+            <div class="col-sm-8">
+                <input class="form-control" id="V5" type="number" ng-model="V5">
+            </div>
+        </div>
+		        <div class="form-group">
+            <label for="V6" class="col-sm-4 control-label">V6 </label>
+            <div class="col-sm-8">
+                <input class="form-control" id="V6" type="number" ng-model="V6" >
+            </div>
+        </div>
+		        <div class="form-group">
+            <label for="V7" class="col-sm-4 control-label">V7 </label>
+            <div class="col-sm-8">
+                <input class="form-control" id="V7" type="number" ng-model="V7">
+            </div>
+        </div>
+		        <div class="form-group">
+            <label for="V8" class="col-sm-4 control-label">V8 </label>
+            <div class="col-sm-8">
+                <input class="form-control" id="V8" type="number" ng-model="V8" >
+            </div>
+        </div>
+		        <div class="form-group">
+            <label for="V9" class="col-sm-4 control-label">V9 </label>
+            <div class="col-sm-8">
+                <input class="form-control" id="V9" type="number" ng-model="V9">
+            </div>
+        </div>
+		        <div class="form-group">
+            <label for="V10" class="col-sm-4 control-label">V10 </label>
+            <div class="col-sm-8">
+                <input class="form-control" id="V10" type="number" ng-model="V10">
+            </div>
+        </div>
+		        <div class="form-group">
+            <label for="V11" class="col-sm-4 control-label">V11 </label>
+            <div class="col-sm-8">
+                <input class="form-control" id="V11" type="number" ng-model="V11" >
+            </div>
+        </div>
+		        <div class="form-group">
+            <label for="V12" class="col-sm-4 control-label">V12 </label>
+            <div class="col-sm-8">
+                <input class="form-control" id="V12" type="number" ng-model="V12">
+            </div>
+        </div>
+		        <div class="form-group">
+            <label for="V13" class="col-sm-4 control-label">V13 </label>
+            <div class="col-sm-8">
+                <input class="form-control" id="V13" type="number" ng-model="V13" >
+            </div>
+        </div>
+		        <div class="form-group">
+            <label for="V14" class="col-sm-4 control-label">V14 </label>
+            <div class="col-sm-8">
+                <input class="form-control" id="V14" type="number" ng-model="V14" placeholder>
+            </div>
+        </div>
+		        <div class="form-group">
+            <label for="V15" class="col-sm-4 control-label">V15 </label>
+            <div class="col-sm-8">
+                <input class="form-control" id="V15" type="number" ng-model="V15" placeholder>
+            </div>
+        </div>        <div class="form-group">
+            <label for="V16" class="col-sm-4 control-label">V16 </label>
+            <div class="col-sm-8">
+                <input class="form-control" id="V16" type="number" ng-model="V16" placeholder>
+            </div>
+        </div>
+		        <div class="form-group">
+            <label for="V17" class="col-sm-4 control-label">V17 </label>
+            <div class="col-sm-8">
+                <input class="form-control" id="V17" type="number" ng-model="V17" placeholder>
+            </div>
+        </div>
+		        <div class="form-group">
+            <label for="V18" class="col-sm-4 control-label">V18 </label>
+            <div class="col-sm-8">
+                <input class="form-control" id="V18" type="number" ng-model="V18" placeholder>
+            </div>
+        </div>
+		        <div class="form-group">
+            <label for="V19" class="col-sm-4 control-label">V19 </label>
+            <div class="col-sm-8">
+                <input class="form-control" id="V19" type="number" ng-model="V19" placeholder>
+            </div>
+        </div>
+		        <div class="form-group">
+            <label for="V20" class="col-sm-4 control-label">V20</label>
+            <div class="col-sm-8">
+                <input class="form-control" id="V20" type="number" ng-model="V20" placeholder>
+            </div>
+        </div>
+		        <div class="form-group">
+            <label for="V21" class="col-sm-4 control-label">V21 </label>
+            <div class="col-sm-8">
+                <input class="form-control" id="V21" type="number" ng-model="V21" placeholder>
+            </div>
+        </div>
+		        <div class="form-group">
+            <label for="V22" class="col-sm-4 control-label">V22</label>
+            <div class="col-sm-8">
+                <input class="form-control" id="V22" type="number" ng-model="V22" placeholder>
+            </div>
+        </div>
+		        <div class="form-group">
+            <label for="V23" class="col-sm-4 control-label">V23</label>
+            <div class="col-sm-8">
+                <input class="form-control" id="V23" type="number" ng-model="V23" placeholder>
+            </div>
+        </div>
+		        <div class="form-group">
+            <label for="V24" class="col-sm-4 control-label">V24 </label>
+            <div class="col-sm-8">
+                <input class="form-control" id="V24" type="number" ng-model="V24" placeholder>
+            </div>
+        </div>
+		        <div class="form-group">
+            <label for="V25" class="col-sm-4 control-label">V25 </label>
+            <div class="col-sm-8">
+                <input class="form-control" id="V25" type="number" ng-model="V25" placeholder>
+            </div>
+        </div>        <div class="form-group">
+            <label for="V26" class="col-sm-4 control-label">V26 </label>
+            <div class="col-sm-8">
+                <input class="form-control" id="V26" type="number" ng-model="V26" placeholder>
+            </div>
+        </div>        <div class="form-group">
+            <label for="V27" class="col-sm-4 control-label">V27</label>
+            <div class="col-sm-8">
+                <input class="form-control" id="V27" type="number" ng-model="V27" placeholder>
+            </div>
+        </div>        <div class="form-group">
+            <label for="V28" class="col-sm-4 control-label">V28 </label>
+            <div class="col-sm-8">
+                <input class="form-control" id="V28" type="number" ng-model="V28" placeholder>
+            </div>
+        </div>       
+		     <div class="form-group">
+            <label for="Amount" class="col-sm-4 control-label">Amount </label>
+            <div class="col-sm-8">
+                <input class="form-control" id="Amount" type="number" ng-model="Amount" placeholder>
+            </div>
+        </div>              
+        <div class="form-group">
+            <label for="Class" class="col-sm-4 control-label">Class </label>
+            <div class="col-sm-8">
+                <input class="form-control" id="Class" type="number" ng-model="Class">
+            </div>
+        </div>    
+        </div>
+		</div>
+	<div class="panel-footer" ng-hide="custom">
+	
+        <div class="form-group">
+            <div class="col-sm-offset-2">
+                <button type="submit" class="btn btn-primary" ng-click="predict()">Predict</button>
+            </div>
+			
+         </div>
+        </div>
+    </form>	</div>
+  <div class="col-lg-5">
+<div class="">
+    <h2>Classification Output</h2>
+    <table class="table table-hover">
+        <tr>
+            <th>Actual Value</th>
+            <th>Predicted Value</th>       
+        </tr>
+        <tr ng-repeat="result in classification_results">
+            <td> {{result.actual}}</td>
+             <td> {{result.predicted}}</td>            
+        </tr>
+    </table>
+</div>
+</div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://rawgit.com/rzajac/angularjs-slider/master/dist/rzslider.js"></script>
+<link src="https://rawgit.com/rzajac/angularjs-slider/master/dist/rzslider.css">
+
+</body>
+</html>

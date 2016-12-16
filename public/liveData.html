@@ -1,0 +1,28 @@
+<div ng-controller="liveDataController">
+<a href='#/' class="btn btn-primary">Back</a>
+
+<a href="https://github.com/sameer-goel/Assignment3_Team7/blob/master/Assignement3_Team7_Report.pdf"> Report </a> <a href="https://github.com/sameer-goel/Assignment3_Team7"> GitHub </a>
+<br/><br/>
+    <table class="table">
+        <tr>
+            <th>Time</th>
+            <th>V1</th>
+            <th>V4</th>
+            <th>V6</th>
+            <th>V8</th>
+			<th>Amount</th>
+            <th>Actual Class</th>
+            <th>Predicted Class</th>
+        </tr>
+        <tr ng-repeat="row in results">
+            <td>{{row.time}}</td>
+            <td>{{row.v1}}</td>
+            <td>{{row.v4}}</td>
+            <td>{{row.v6}}</td>
+            <td>{{row.v8}}</td>
+            <td>{{row.amount}}</td>
+            <td>{{row.actualClass}}</td>
+            <td>{{row.predictedClass}}</td>
+        </tr>
+    </table>
+</div>
